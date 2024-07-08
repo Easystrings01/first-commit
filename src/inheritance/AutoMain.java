@@ -20,7 +20,7 @@ public class AutoMain {
         Truck truck = new Truck("AVB1055", 12, 8, "Sino");
         Cargo p = new Cargo();
         p.name = "Suger";
-//        p.weight =
+        p.weight = 45f;
     }
 
 }
