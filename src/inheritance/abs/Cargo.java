@@ -1,13 +1,15 @@
-package inheritance;
+package inheritance.abs;
 
 
 public class Cargo {
     String name;
     float weight;
 
-    public Cargo() {
+     // first constructor
+   public Cargo() {
     }
 
+    //second constructor
     public Cargo(String name, float weight) {
         this.name = name;
         this.weight = weight;

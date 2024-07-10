@@ -1,15 +1,17 @@
-package inheritance;
+package inheritance.abs;
 
 public abstract class AutoMobile {
     private final String chasisNo;
     private int wheels, seats;
     private String brand;
 
-    public AutoMobile(String chasisNo, int wheels, int seats, String brand) {
+
+    public AutoMobile(String chasisNo, int wheels, int seats, String brand ) {
         this.wheels = wheels;
         this.seats = seats;
         this.brand = brand;
         this.chasisNo = chasisNo;
+
     }
 
     public String getChasisNo() {
@@ -33,11 +35,11 @@ public abstract class AutoMobile {
     }
 
     public String getBrand() {
-        return this.brand;
+        return this.brand; // to get brand
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+        this.brand = brand; // to change brand
     }
 
     public void move(){
