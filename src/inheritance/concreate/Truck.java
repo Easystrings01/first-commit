@@ -1,6 +1,7 @@
 package inheritance.concreate;
 
 import inheritance.abs.AutoMobile;
+import inheritance.abs.Cargo;
 
 public class Truck extends AutoMobile {
 
@@ -8,12 +9,11 @@ public class Truck extends AutoMobile {
     private int doors;
     private boolean ac , roof , trunk , bucket;
 
-    public Truck(String chasisNo, int wheels, int seats, String brand , int doors , boolean roof , boolean trunk , boolean ac, boolean bucket) {
+    public Truck(String chasisNo, int wheels, int seats, String brand , int doors , boolean roof , boolean ac, boolean bucket) {
         super(chasisNo, wheels, seats, brand);
         this.doors = doors;
         this.ac = ac;
         this.roof = roof;
-        this.trunk = trunk;
         this.bucket = bucket;
     }
 
@@ -60,5 +60,11 @@ public class Truck extends AutoMobile {
     public void reverse() {
         System.out.println(this.getBrand() + " is reversing...");
 
+    }
+
+    @Override
+    public void carryCargo(Cargo cargo) {
+        if (this.bucket)
+            System.out.println(this.getBrand() + " is carrying " + cargo.toString() + " in its bucket");
     }
 }

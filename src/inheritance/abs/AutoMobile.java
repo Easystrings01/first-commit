@@ -46,9 +46,10 @@ public abstract class AutoMobile {
         System.out.println(this.brand + " is moving forward");
     }
 
-    public void carryCargo(Cargo load){
-        System.out.println(this.brand + " is carrying " + load.toString());
-    }
+//    public void carryCargo(Cargo load){
+//        System.out.println(this.brand + " is carrying " + load.toString());
+//    }
+    public abstract void carryCargo(Cargo cargo);
 
     public void stop(){
         System.out.println(this.brand + " is stopping..");

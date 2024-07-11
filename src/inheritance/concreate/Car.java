@@ -1,6 +1,7 @@
 package inheritance.concreate;
 
 import inheritance.abs.AutoMobile;
+import inheritance.abs.Cargo;
 
 public class Car extends AutoMobile {
     private int doors;
@@ -49,5 +50,11 @@ public class Car extends AutoMobile {
 
     public void reverse(){
         System.out.println(this.getBrand() + " is reversing...");
+    }
+
+    @Override
+    public void carryCargo(Cargo cargo) {
+        if (this.trunk)
+            System.out.println(this.getBrand() + " is carrying " + cargo.toString() + " in its trunk");
     }
 }
